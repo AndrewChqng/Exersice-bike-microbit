@@ -1,0 +1,34 @@
+{
+    "name": "Exercise bike",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "WhaleySansFont": "github:makecode-packages/whaleysansfont#6ac172a0452b2b85312043f2dd032c38068ce455",
+        "ScrollText": "github:makecode-packages/scrolltext#d62296382802f1cd6513ce4aa7df89d4aab26fce"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
+}
