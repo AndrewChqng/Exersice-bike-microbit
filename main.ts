@@ -28,12 +28,14 @@ let Temp = 0
 let list: number[] = []
 list = [0, 0, 0, 0, 0]
 basic.forever(function () {
+    // Depends in speed sensor
     while (pins.analogReadPin(AnalogPin.P0) > 2) {
         basic.pause(1)
     }
     Revolution_total += 1
     tmp += 1
     while (pins.analogReadPin(AnalogPin.P0) <= 2) {
+        // Best way I found to do this logic but probably better way somehow
         continue;
     }
 })
